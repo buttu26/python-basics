@@ -260,4 +260,65 @@ for num in list1:
         min1=num
 print(max1)
 print(min1)
+#searching for an element in a list
+list=["raju","ravi","ramu","somu"]
+searching_name=input("enter the name: ")
+found=False
+for i in list:
+    if searching_name==i:
+        found=True
+if found:
+    print("yes")
+else:
+    print("no")
+
+#count even numbers and odd numbers in the list
+
+list1=[1,2,3,4,5,6,7,8,9,20]
+
+even_count=0
+odd_count=0
+for i in range(len(list1)):
+    if list1[i] % 2==0:
+        even_count+=1
+    else:
+        odd_count+=1
+print("number of even numbers are:" ,even_count) 
+print("number of odd numbers: " ,odd_count)
+
+#reversing the list without reverse
+
+list1=[1,2,3,4,5,6,7,8,9,20]
+list2=[]
+for i in list1:
+    list2.insert(0,i)
+print(list2)
+
+#or
+list1=[1,2,3,4,5,6,7,8,9,20]
+l=len(list1)
+list2=[]
+for i in range(l-1,-1,-1):
+    list2.append(list1[i])
+print(list2)
+
+# removing all negative numbers using loop
+
+list=[-1,2,-3,4,5,-10,11,21]
+list1=[]
+for num in list:
+   if (num>=0):
+     list1.append(num)
+print(list1)
+
+#multiply each element in the list
+
+list1=[1,2,3,4,5,6,7,8,9,20]
+list2=int(input("enter a value:"))
+result_list=[]
+for num in list1:
+     result_list.append(num*list2)
+print(result_list)
+
+
     
