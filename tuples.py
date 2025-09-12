@@ -81,3 +81,45 @@
 # A=(10,20,30,40)
 # print(sum(A))
 
+# #concatenation
+# A=(10,20,30,40)
+# B=(50,60,70)
+# C=A+B
+# print(C)
+
+# #repetition
+# A=(10,20,30,40)
+# n=int(input("enter the n value:"))
+# b=A*n
+# print(b)
+
+# #SEARCHING AND CHECKING
+# A=(10,20,30,40)
+# if 20 in A:
+#     print("yes its there")
+
+# #not in
+# if 50 not in A:
+#     print("no in A")
+
+# #Index():
+# A=(10,20,30,40)
+# print(A.index(20))
+
+# #count():
+# A=(10,20,30,40,40)
+# print(A.count(40))
+
+# #sorting  reversing is not valid for tuples
+
+# # A=(10,20,30,40,40,5)
+# # A.sort()
+# # print(A)         #AttributeError: 'tuple' object has no attribute 'sort'
+
+# #COPYING THE TUPLES
+# # A=(10,20,30,40)
+# # B=A.copy()
+# # print(B)
+
+#Iterating tuple using for loop
+
