@@ -1,0 +1,528 @@
+ #KEYWORDS
+
+It is also known as reserve words 
+____________________
+if  | else | print |
+    |      |       |
+for | elif | while |
+    |      |       |         
+list| tuple| set   |
+    |      |       |
+int | float| input |
+
+ =>RULES TO WRITE VARIABLES
+
+ 1.dont start with numbers ex: 1varible x variable1 (right) 
+ 2.try to use $,_
+ 3.try to write camelcase
+    ex:nameBittu
+
+#NOTE: when we want to print to statements in one line we should use , after the first statement.
+                                 OUTPUT
+       ex: name="bittu"
+           age=18
+           print(name,age)       bittu 18
+
+*Operators 
+
+   operators are special type of symbols that is used to perform aoperations on variables and values.
+
+*Operands
+   operands are the values on which operators work.
+
+*Types of operators
+
+  1.Arthematic operator.
+     
+     # arthemetic operator
+a=10
+b=3
+print(a+b)      + addition
+print(a-b)      - subraction                                                        trailbliz
+print(a*b)      * multiplication
+print(a/b)      / division
+print(a//b)    // floor division 
+print(a%b)      % modulus for getting remainder
+print(a**b)    ** exponent for power 
+
+
+  2.Comparison operator.  ( in boolian type answers )
+      It is also called as relational operators.
+      This is used to compare values.
+      after camparision the results or output are displayed on boolean type (true or false)
+
+      # comparision operator
+x=5
+y=8
+print(x==y)          == equal to
+print(x!=y)          != not equal to
+print(x>y)           >  greater than
+print(x<y)           <  less than
+print(x>=y)          >= greater than or equal to
+print(x<=y)          <= less than or equal to
+
+
+
+  3.LOGICAL OPERATOR.
+     In python logical operators are used
+ to combine conditional statements to give boolean type answers 
+There are 3 MAIN types of logical operators
+
+    *AND OPERATOR
+
+  It is a logical operator it determines if both conditions are true then statement is true
+   example: x=5 
+            print(x>3 and x>1)
+
+      AND | T  T  T |
+          | T  F  F |
+          | F  T  F |
+          | F  F  F |
+
+    *OR OPERATOR
+
+   Is a logical operator it determines if at least one condition is true
+     example:x=5
+             print(x>3 or x>6 )
+
+      OR  | T  T  F |
+          | T  F  T |
+          | F  T  T | 
+          | F  F  T |
+
+    *NOT OPERATOR
+
+       TO MAKE THE ANSWER REVERSE,OF AND OPERATOR
+    example: x=5
+             print(not(x>6)
+
+not(False)--True
+not(True)--False
+
+
+ python is a 'case sensitive language' and "false is not equal to False"
+
+CODE OF LOGICAL OPERATORS
+
+  #logical operators
+#AND OPERATORS
+  x=30
+
+print(x>20 and x>10)     TRUE
+
+print(x>20 and x<5)      FALSE
+ 
+print(x<30 and x>20)     FALSE
+ 
+print(x<30 and x>35)     FALSE
+
+#NOT OPERATORS
+  x=30
+
+print(not(x>20 and x>10)) FALSE
+
+print(not(x>20 and x<5))  TRUE
+
+print(not(x<30 and x>20)) TRUE
+ 
+print(not(x<30 and x>35)) TRUE
+
+#OR OPERATORS
+  x=30
+
+print(x>20 or x>10)  TRUE
+
+print(x>20 or x<25)  TRUE
+ 
+print(x<5 or x>20)   TRUE
+
+print(x>35 or x>55)  FALSE
+
+
+  4.Assignment operator.
+
+  In assignment operators x=x+3 and x+=3 are same
+
+     =    x=5   => assigning 5 in 
+     +=   x+=5  =>  x=x+5
+     -=   x-=5  =>  x=x-5
+     *=   x*=5  =>  x=x*5
+     /=   x/=5  =>  x=x/5
+     //=  x//=5 => x=x//5
+     %=   x%=5  =>  x=x%5
+    **=   x**=5 => x=x**5
+
+CODE OF ASIGNEMENT OPERATORS
+
+#ASSIGNEMENT OPERATORS
+
+             answers
+x=15
+x=x+5
+print(x)       20
+x=15           +=
+x+=5
+print(x)       20
+      
+x=50           -=
+x-=3
+print(x)       47
+
+x=45           *=
+x*=2
+print(x)       90
+ 
+x=35           /=
+x/=5
+print(x)       7.0
+
+x=35           //=
+x//=5
+print(x)       7
+
+x=50           %=
+x%=5
+print(x)       0
+ 
+x=2            **=
+x**=5
+print(x)       32
+
+
+  5.Bitwise operator.
+   
+
+   
+   
+  
+
+
+
+    #BINARY NUMBERS
+ 
+  |...64 32 16 8 4 2 1   0 
+0 |0 0 0  0  0 0 0 0 0   0
+1 |0 0 0  0  0 0 0 0 1   0
+2 |0 0 0  0  0 0 0 1 0   0
+3 |0 0 0  0  0 0 0 1 1   0
+4 |0 0 0  0  0 0 1 0 0   0
+5 |0 0 0  0  0 0 1 0 1   0
+6 |0 0 0  0  0 0 1 1 0   0
+7 |0 0 0  0  0 0 1 1 1   0
+8 |0 0 0  0  0 1 0 0 0   0
+9 |0 0 0  0  0 1 0 0 1   0
+10|0 0 0  0  0 1 0 1 0   0
+11|0 0 0  0  0 1 0 1 1   0
+12|0 0 0  0  0 1 1 0 0   0
+
+
+
+
+ & ----- and 
+ | ----- or
+ ~ ----- not
+ ^ ----- xor
+ << ---- left shift
+ >> ---- right shift
+
+examples:  5 & 3
+
+ x=5                      OUTPUT
+ y=3
+print(x & y)                1
+
+=> CODE FOR BITWISE
+
+x=5
+y=3
+print(x & y)      #and shift      1
+print(x|y)        #or shift       7
+print(~x)         #not shift     -6
+print(x^y)        #xor shift      6
+print(x<<y)       #right shift    40
+print(x>>y)       #left shift     0
+
+
+  6.Identity operator.
+
+We use keywords like is , isnot
+                   
+
+ex:  x=[1,2,3,4]
+     y=x
+     z=[1,2,3,4]
+     print(x is y)      True
+     print(x is z)      False
+     print(x is not z)  True
+
+
+  7.Membership operator.  
+
+#membership operator
+ we use in , not in
+
+
+text = "sairam"
+print("sai" in text)        #True
+print("b" in text)          #False
+text=[1,2,3,4]
+print(4 in text)            #True
+print(4 not in text)        #False
+
+
+#STRINGS (str)
+
+ Astring is a sequence of characters (1,2,s,%,*).
+To represent strings we should use '' , "" , """ etc
+Example: "hello world"
+It will consider spaces in between the words also.
+
+TOPICS
+1.INDEXING
+2.SLICING
+3.METHODS 
+4.FORMATTING
+5.CONCATENATION
+
+
+1.INDEXING
+
+  Index is nothing but it allocates position to strings
+ ->index starts with zero
+    "hello world"
+     012345678910
+ ->Negative indexing
+    "hello world"
+ -11-10-9-8-7-6-5-4-3-2-1  (refer notes)
+
+2.SLICING
+  
+  Slicing is nothing but it represents starting element and ending element 
+Syntax:[starting:ending]        
+                                OUTPUT
+example  str="hello world"     
+         print(str[1:4])          ello
+
+         str="hello world"
+         print(str[1: ])          ello world
+
+#NOTE: Strings are ordered
+      =>strings are immutable (we cannot change)
+
+3.METHODS
+
+i     .upper()
+ii    .lower()
+iii   .strip()
+iv    .replace("old","new")
+
+code for methods
+str="hello world"
+print(str.upper())
+str="hello world"
+print(str.lower())
+str=" hello world "
+print(str.strip())
+str="hello world"
+print(str.replace("hello","hi"))
+
+4.FORMATTING
+
+  Formatting is also known as f-strings.
+To access values we are using variables in {}
+
+EX: name="sadvik"
+    age=18
+    print(f" iam {name} , my age is {age} ")
+ 
+  output :iam sadvik , my age is 18
+
+
+
+5.CONCATENATION :
+
+it adds(+)
+
+                                 OUTPUT
+name="sadvik"                    
+name1="yadav"
+print(name + name1)            sadvikyadav
+print(name+" "+name1)          sadvik yadav
+
+
+#CODE FOR STRINGS#
+
+                     OUTPUTS
+x=5
+print(type(x))        int
+
+x=5.012
+print(type(x))        float
+
+x='s'
+print(type(x))        string
+ 
+#INDEXING
+
+str="hello world"
+print(str[1])          e
+
+print(str[5])  
+         
+print(str[-11])        h
+
+str="hi"
+print(str[1])          i
+
+#SLICING
+                            OUTPUT
+str="hello world"
+print(str[1:4])              ell
+str="hello world"
+print(str[1: ])              ello world
+str="hello world"
+   
+#METHODS
+
+str="hello world"
+print(str.upper())           HELLO WORLD
+str="hello world"
+print(str.lower())           hello world
+str="hello world"
+print(str.strip())           helloworld
+str="hello world"
+print(str.replace("hello","hi"))  hi world
+
+#FORMATTING
+
+name="sadvik"                                                                  OUTPUT
+age=18
+print(f" iam {name} , my age is {age} ")                                      iam sadvik , my age is 18 
+
+college="MRCET"
+course="cse AIML"
+print(f" my college is  {college}, and my course is  {course}")              my college is  MRCET, and my course is  cse AIML
+
+
+#CONCATENATION
+
+name="sadvik"
+name1="yadav"
+print(name + name1)
+print(name+" "+name1)
+
+
+        ##CONDITIONAL STATEMENTS##
+ 
+   I n conditional statements it contains certain statements,the statements excicutes based on conditions.
+ -> the condition is true then it exicutes
+
+#TYPES :
+
+<>if
+<>if-else
+<>elif
+<>nested if
+
+
+1.  <>if  
+     
+    syntax
+if cond:
+        #Statements
+
+-> If condition is true then the statements gets exicutes.
+
+
+example: x=10                             output
+if x>5:
+    print("yes x is greater than 5")     yes x is greater than 5
+
+if x<5:
+    print("yes x is lesser than 5")         (blank)
+
+
+2.  <>if-else
+
+   If 'if' condition is true then it exicutes if block statements
+-> If 'if' is false then it exicutes else block statements
+
+ 
+    syntax
+  if cond:
+          #Statements
+  else:
+       #Statements                  (blank) ante statement is false 
+
+examples:
+                                                       OUTPUT
+x=10
+if x>20:
+    print("yes x is greater than 20")                   (blank)
+else:
+    print("not valid")                                 notvalid
+#condition of if is false
+x=5
+if x<0:
+    print("yes x is lesser than 0")                    (blank)
+else:
+    print('not valid')                                 not valid
+#condition of if is true 
+x=5
+if x>4:
+    print("yes x is greater than 4")                  yes x is greater than 4
+else:
+    print("not valid")
+
+
+
+3.   <>if-elif-else 
+
+    syntax:
+
+   if cond1:
+           #statement
+   elif cond2:
+             #statement
+   elif cond3:
+             #statements
+   else:
+       #statements
+
+
+->If cond1 is false,elif cond2 is true then it exicutes elif cond2 block
+
+#NOTE: i. If three cond. are true it exicutes 1st block (if block)
+       ii. If three cond. are false than it exicutes else block.
+
+
+x=10
+if x>20:
+    print("cond1")
+elif x>6:
+    print("cond2")
+elif x>7:
+    print("cond3")
+else:
+    print("not valid")
+
+4. Nested if
+
+
+
+
+
+                    #LOOPS 
+ 
+   loop is a programming language that allows us to repeat a set of instructions multiple
+times without writing them again and again .Instead of repeating the same code,we use a loop
+to make the computer do the task repeatedly until certain condition is met.
+   In programming language a loop is used when we want to repeat a set of instructions multiple
+times without writing the code again and again.
+
+
+
+
+
+
+  
