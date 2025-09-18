@@ -93,6 +93,17 @@ def details(**info):
 details(name="Bittu",roll_no="l60",branch="csm")
 
 #scope of variable :
+#The scope of a variable means th part of the program where that variable can be accessed or userd.
+#In python,variable can be local and global,depending on where they are created.
+#local variable
+#A variable declared inside a fuction is called a local variable.
+#it exists only while the function is running.
+#it cannot be used outside that function.
+#Global variable:
+#A variable declred outside all function is called global variable.
+#It can be accessed anywhere in the program (inside or outside of functions).
+#examples:
+
 x=10 #global variable
 def var1():
      y=5 #local variable
@@ -103,4 +114,15 @@ def var2():
 var2()
 
 print("outside function",x)
+
+#lambda function
+#normal function:
+def seq(a):
+     print(a*a)    #25
+seq(5) 
+
+#Lambda function
+squ=lambda x:x*x
+print(squ(5))    #25
+
 
