@@ -115,14 +115,20 @@ var2()
 
 print("outside function",x)
 
-#lambda function
-#normal function:
+#Lambda function
+#A lambda function is a small, anonymus function in python.
+#Unlike normal functions defined using def , a lambda function does not have a name.
+#It is usually used for short,simple operations.
+#syntax:
+#lambda arguments: expression
+#normal function for squaring a number
+
+#Normal Function
 def seq(a):
      print(a*a)    #25
 seq(5) 
 
-#Lambda function
+#lambda function:
 squ=lambda x:x*x
 print(squ(5))    #25
-
 
